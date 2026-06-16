@@ -5,7 +5,7 @@ __QNU_UNIQUE_BUILD_SYSTEM_INSTALLPATH="/usr/local/bin"
 
 if command -v $__QNU_UNIQUE_BUILD_SYSTEM_COMPILATOR >/dev/null 2>&1; then
   echo Building...
-  $__QNU_UNIQUE_BUILD_SYSTEM_COMPILATOR main.c -o osnaschator || echo ERROR && exit 1
+  $__QNU_UNIQUE_BUILD_SYSTEM_COMPILATOR main.c -o osnaschator || exit 1
   echo Successfully built!
   echo Do you want to install the utility? [y/n]
   read -r otvet
